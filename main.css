@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+body{
+    margin: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 14px;
+}
+.container{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-row-gap: 16px;
+}
+label{
+    display: block;
+}
+
+input{
+    width: 50%;
+    outline: none;
+    line-height: 32px;
+    padding: 0 8px;
+    border: 2px solid #222;
+}
+.msg {
+    width: 50%;
+    padding: 8px;
+    background: #f0fa6f;
+    opacity: 0;
+    transition-delay: 200ms;
+    transition-property: opacity;
+}
+input:not(:placeholder-shown) + .msg {
+    opacity: 1;
+}
